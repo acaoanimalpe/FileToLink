@@ -12,7 +12,7 @@ class Var(object):
     API_ID = int(getenv('API_ID', '26343571'))
     API_HASH = str(getenv('API_HASH', 'e615d40a0f2e23a40c4c4d35d0b9afc2'))
     BOT_TOKEN = str(getenv('BOT_TOKEN', '6584044171:AAFPWI6kyu0OyQBBuOwWn_7ou0UfldjsVeY'))
-    name = str(getenv('name', 'filetolinkbr'))
+    name = str(getenv('name', 'streambr'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002084028116'))
@@ -22,7 +22,7 @@ class Var(object):
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5043218002").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', '@interflix_br'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'interflix_br'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
